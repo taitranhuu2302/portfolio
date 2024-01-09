@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "name": "protfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "dependencies": {
+    "@astrojs/check": "^0.4.0",
+    "astro": "^4.1.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@edgio/cli": "^7.7.1",
+    "@edgio/connectors": "^7.7.1",
+    "@edgio/core": "^7.7.1",
+    "@edgio/prefetch": "^7.7.1"
+  }
+}
