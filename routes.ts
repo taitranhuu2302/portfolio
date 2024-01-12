@@ -10,7 +10,7 @@ export default new Router()
   .match("/about", ASSET_CACHE_HANDLER)
   .match("/404", ASSET_CACHE_HANDLER)
   .match("/_astro/:path*", ASSET_CACHE_HANDLER)
-  .match("/assets/:path*", IMAGE_CACHE_HANDLER)
+  .match("/assets/:path*", ASSET_CACHE_HANDLER)
   .match("/assets/backgrounds/:path*", ASSET_CACHE_HANDLER)
   .match("/work/:path*", ASSET_CACHE_HANDLER)
   .use(astroRoutes);
