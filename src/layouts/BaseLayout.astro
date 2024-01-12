@@ -27,8 +27,14 @@ const { title, description } = Astro.props;
 		</div>
 
 		<script>
+      import {install} from '@edgio/prefetch/window';
+
 			// Add “loaded” class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
+
+      if (typeof navigator != 'undefined') {
+        install();
+      }
 		</script>
 
 		<style>
